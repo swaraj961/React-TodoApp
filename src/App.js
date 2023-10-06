@@ -24,7 +24,7 @@ function App() {
 
   //  add
   const addNewTodos = (title, desc) => {
-    console.log(`I'm Adding this to list`, title, desc);
+    console.log(`I'm Adding this to my todo list`, title, desc);
     let sno = todos.length === 0 ? 1 : todos[todos.length - 1].sno + 1;
     const myNewTodo = {
       sno: sno,
@@ -53,27 +53,6 @@ function App() {
 
   const [todos, setTodos] = useState(
     initTodo
-
-    // [
-    // {
-    //   sno: 1,
-    //   title: "go to gym",
-    //   desc: "go to gym at 6AM and have breakfast at 8:30AM "
-
-    // },
-    // {
-    //   sno: 2,
-    //  title: "go to market",
-    //   desc: "go to market at 8PM and have dinner at 8:30AM "
-
-    // },
-    // {
-    //   sno: 3,
-    //   title: "go to park",
-    //   desc: "go to park and get back home at 7 PM "
-
-    // },
-    // ]
   );
 
   // when ever state change userEffect hook is being called
